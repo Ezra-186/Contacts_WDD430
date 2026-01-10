@@ -1,0 +1,20 @@
+{
+  "name": "contacts_wdd430",
+  "version": "1.0.0",
+  "description": "My First Project",
+  "homepage": "https://github.com/Ezra-186/Contacts_WDD430#readme",
+  "bugs": {
+    "url": "https://github.com/Ezra-186/Contacts_WDD430/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezra-186/Contacts_WDD430.git"
+  },
+  "license": "ISC",
+  "author": "Daniel Ezra Rivera",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
