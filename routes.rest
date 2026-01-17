@@ -4,13 +4,41 @@
 
 
 
-// Production
-### Get all Contacts
-GET https://contacts-wdd430.onrender.com/contacts http/1.1
+@baseUrl = http://localhost:3000
+@contactId = 696b057e389329af529bcdcd
+
+### Get all contacts
+GET {{baseUrl}}/contacts
 
 ### Get contact by id
-GET https://contacts-wdd430.onrender.com/contacts/696283c2f5961f27f8783e26 http/1.1
+GET {{baseUrl}}/contacts/{{contactId}}
 
+### Create contact
+POST {{baseUrl}}/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Daniel",
+  "lastName": "Test",
+  "email": "DanT@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "01-01-1990"
+}
+
+### Update contact
+PUT {{baseUrl}}/contacts/{{contactId}}
+Content-Type: application/json
+
+{
+  "firstName": "Neo",
+  "lastName": "Anderson",
+  "email": "TheOne@Matrix.com",
+  "favoriteColor": "Red",
+  "birthday": "03-31-1999"
+}
+
+### Delete contact
+DELETE {{baseUrl}}/contacts/{{contactId}}
 
 
 
